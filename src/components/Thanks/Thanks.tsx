@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import styles from './Thanks.scss';
+import styles from './Thanks.module.scss';
 
 type PropsType = {
   rating: number | null;
@@ -7,7 +7,7 @@ type PropsType = {
 
 const Thanks: FC<PropsType> = ({ rating }) => {
   return (
-    <div>
+    <div className={styles.thanks}>
       <p>You selected {rating} out of 5</p>
       <p> Thank you!</p>
       <p>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css';
+import './App.scss';
 import Footer from '../Footer/Footer';
 import Rating from '../Raiting/Rating';
 import Thanks from '../Thanks/Thanks';
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className='App'>
-      {submit ? <Thanks rating={rating} /> : <Rating setSubmit={setSubmit} setRating={setRating} />}
+      {submit ? <Thanks rating={rating} /> : <Rating setSubmit={setSubmit} setRating={setRating} rating={rating} />}
       <Footer />
     </div>
   );
