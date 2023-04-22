@@ -1,8 +1,11 @@
+@import '../../styles/colors';
+
 .footer {
   font-size: 11px;
   text-align: center;
+  color: $light-grey;
 }
 
 .footer a {
-  color: hsl(228, 45%, 44%);
+  color: $medium-grey;
 }

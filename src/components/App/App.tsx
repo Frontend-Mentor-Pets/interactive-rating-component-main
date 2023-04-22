@@ -1,16 +1,20 @@
 import { useState } from 'react';
-import './App.scss';
-import Footer from '../Footer/Footer';
-import Rating from '../Raiting/Rating';
-import Thanks from '../Thanks/Thanks';
+import styles from './App.module.scss';
+import Footer from '../Footer';
+import Rating from '../Rating';
+import Thanks from '../Thanks';
 
 function App() {
   const [submit, setSubmit] = useState(false);
   const [rating, setRating] = useState<number | null>(null);
 
   return (
-    <div className='App'>
-      {submit ? <Thanks rating={rating} /> : <Rating setSubmit={setSubmit} setRating={setRating} rating={rating} />}
+    <div className={styles.app}>
+      {submit ? (
+        <Thanks rating={rating} />
+      ) : (
+        <Rating setSubmit={setSubmit} setRating={setRating} currentRating={rating} />
+      )}
       <Footer />
     </div>
   );

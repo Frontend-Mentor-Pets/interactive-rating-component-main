@@ -1,0 +1,103 @@
+@import '../../styles/colors';
+
+.card {
+  width: 412px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: $dark-blue;
+  border-radius: 30px;
+  padding: 33px;
+
+  margin-top: 195px;
+  margin-bottom: 40px;
+}
+
+.star {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: $medium-grey;
+  margin-bottom: 34px;
+}
+
+.title {
+  color: $white;
+  font-size: 28px;
+  letter-spacing: 0.3px;
+  margin-bottom: 11px;
+}
+
+.subtitle {
+  color: $light-grey;
+  letter-spacing: -0.5px;
+  line-height: 23.3px;
+  margin-bottom: 28px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+.rating {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: $medium-grey;
+  color: $light-grey;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $orange;
+    color: $white;
+  }
+
+  &_active {
+    background-color: $light-grey;
+    color: $white;
+
+    &:hover {
+      cursor: default;
+      background-color: $light-grey;
+      color: $white;
+    }
+  }
+}
+
+.submit {
+  width: 340px;
+  height: 45px;
+  border-radius: 30px;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: $orange;
+  color: $white;
+  padding-top: 4px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $white;
+    color: $orange;
+  }
+}
