@@ -2,7 +2,7 @@
   "name": "interactive-rating-component-main",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://frontend-mentor-pets.github.io/interactive-rating-component-main/",
+  "homepage": "https://frontend-mentor-pets.github.io/newbie-interactive-rating-component/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
