@@ -14,8 +14,10 @@ const Thanks: FC<PropsType> = ({ rating }) => {
       </div>
       <p className={styles.rating}>You selected {rating} out of 5</p>
       <h1 className={styles.title}> Thank you!</h1>
-      <p className={styles.subtitle}>We appreciate you taking the time to give a rating.</p>
-      <p className={styles.text}>If you ever need more support, don’t hesitate to get in touch!</p>
+      <p className={styles.subtitle}>
+        We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in
+        touch
+      </p>
     </div>
   );
 };
