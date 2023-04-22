@@ -9,14 +9,16 @@ function App() {
   const [rating, setRating] = useState<number | null>(null);
 
   return (
-    <div className={styles.app}>
-      {submit ? (
-        <Thanks rating={rating} />
-      ) : (
-        <Rating setSubmit={setSubmit} setRating={setRating} currentRating={rating} />
-      )}
+    <>
+      <main className={styles.app}>
+        {submit ? (
+          <Thanks rating={rating} />
+        ) : (
+          <Rating setSubmit={setSubmit} setRating={setRating} currentRating={rating} />
+        )}
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
 
