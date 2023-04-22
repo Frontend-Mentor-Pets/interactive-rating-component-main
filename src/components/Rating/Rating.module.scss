@@ -9,7 +9,6 @@
   background-color: $dark-blue;
   border-radius: 30px;
   padding: 33px;
-
   margin-top: 195px;
   margin-bottom: 40px;
 }
@@ -99,5 +98,11 @@
     cursor: pointer;
     background-color: $white;
     color: $orange;
+  }
+
+  &:disabled {
+    cursor: default;
+    background-color: $orange;
+    color: $white;
   }
 }

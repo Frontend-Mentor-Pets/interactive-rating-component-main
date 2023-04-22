@@ -25,7 +25,7 @@ const Rating: FC<PropsType> = ({ setSubmit, setRating, currentRating }) => {
         <img src={star} alt='Star' />
       </div>
 
-      <p className={styles.title}>How did we do?</p>
+      <h1 className={styles.title}>How did we do?</h1>
       <p className={styles.subtitle}>
         Please let us know how we did with your support request. All feedback is appreciated to help us improve our
         offering!
@@ -33,7 +33,7 @@ const Rating: FC<PropsType> = ({ setSubmit, setRating, currentRating }) => {
       <ul className={styles.list}>
         {ratings.map((rating) => {
           return (
-            <li>
+            <li key={rating}>
               <button
                 onClick={() => ratingHandler(rating)}
                 className={`${styles.rating} ${rating === currentRating && styles['rating_active']}`}
