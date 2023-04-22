@@ -73,12 +73,13 @@
 }
 
 .subtitle {
-  width: 100%;
+  width: 350px;
   font-size: 16px;
+  letter-spacing: -0.3px;
+  line-height: 23px;
+  text-align: center;
   color: $light-grey;
-  letter-spacing: -0.4px;
-  padding: 0px 34px;
-  margin-bottom: 4px;
+  margin-bottom: 50px;
 
   @media (max-width: 425px) {
     width: 290px;
